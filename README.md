@@ -1,0 +1,1 @@
+# java-springboot-jenkins-shared-lib-vars
