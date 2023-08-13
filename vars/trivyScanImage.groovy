@@ -1,6 +1,6 @@
 def call(String registryUser, String appName, String tagName){
     sh """
-        trivy image ${registryUser}/${appName} ${registryUser}/${appName}:latest >> scan.txt
+        trivy image ${registryUser}/${appName}:latest >> scan.txt
         cat scan.txt
         
     """
