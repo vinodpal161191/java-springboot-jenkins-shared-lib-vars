@@ -5,6 +5,6 @@ def call(String registryUser, String appName, String tagName){
         sh "docker login -u $DOCKER_USER -p $DOCKER_PASS"
     }
 
-    sh "docker image push ${registryUser}/${appName} ${registryUser}/${appName}:${tagName}"
-    sh "docker image push ${registryUser}/${appName} ${registryUser}/${appName}:latest"
+    sh "docker image push ${registryUser}/${appName}:${tagName}"
+    sh "docker image push ${registryUser}/${appName}:latest"
 }
